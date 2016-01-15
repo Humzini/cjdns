@@ -56,7 +56,7 @@ other questions should be directed toward IRC.
 ## How does routing work?
 
 In a cjdns network, a packet goes to a router and the router labels the packet
-with directions to the router best able to handle it. That is, a router which
+with directions to the router best suited to handle it. That is, a router which
 is physically nearby and has an address numerically close to the destination
 address of the packet. The directions are added to the packet to allow it to go
 through a number of routers with minimal handling, *a verifiable form of source
@@ -137,7 +137,7 @@ following command:
 If Xcode is not installed, you can either install it through the App
 Store and run the command above, or make a free Apple Developer account here:
 [https://developer.apple.com/downloads/index.action](https://developer.apple.com/downloads/index.action).
-Then sign in, search for Command Line Tools, and install the latest package
+Then sign in, search for Command Line Tools, and install the latest package which is
 compatible with your version of OS X. If you encounter issues, there is a
 thorough [stackoverflow post](http://stackoverflow.com/a/9329325) on installing
 the Command Line Tools.
@@ -221,7 +221,7 @@ connections and anyone who connected to you will no longer be able to connect.
 A compromised conf file means that other people can impersonate you on the
 network.
 
-To set generate a conf file with permissions set so that only your user can
+To set, generate a conf file with permissions set in such a way that only your user can
 read it and write to it:
 
     (umask 077 && ./cjdroute --genconf > cjdroute.conf)
